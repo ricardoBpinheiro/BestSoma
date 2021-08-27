@@ -45,7 +45,6 @@ Public Class frmBestSoma
                 End If
 
             End If
-
         Next
 
         Return menorCombinacao
