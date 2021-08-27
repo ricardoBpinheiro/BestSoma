@@ -23,10 +23,11 @@ Partial Class frmBestSoma
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.dtgDados = New System.Windows.Forms.DataGridView()
+        Me.numero = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnSomar = New System.Windows.Forms.Button()
         Me.txtNumero = New System.Windows.Forms.TextBox()
         Me.lblNumero = New System.Windows.Forms.Label()
-        Me.numero = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnTeste = New System.Windows.Forms.Button()
         CType(Me.dtgDados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,6 +42,12 @@ Partial Class frmBestSoma
         Me.dtgDados.Name = "dtgDados"
         Me.dtgDados.Size = New System.Drawing.Size(397, 195)
         Me.dtgDados.TabIndex = 0
+        '
+        'numero
+        '
+        Me.numero.HeaderText = "Números Soma"
+        Me.numero.Name = "numero"
+        Me.numero.Width = 250
         '
         'btnSomar
         '
@@ -68,17 +75,21 @@ Partial Class frmBestSoma
         Me.lblNumero.TabIndex = 3
         Me.lblNumero.Text = "Número  Alvo:"
         '
-        'numero
+        'btnTeste
         '
-        Me.numero.HeaderText = "Números Soma"
-        Me.numero.Name = "numero"
-        Me.numero.Width = 250
+        Me.btnTeste.Location = New System.Drawing.Point(219, 242)
+        Me.btnTeste.Name = "btnTeste"
+        Me.btnTeste.Size = New System.Drawing.Size(94, 29)
+        Me.btnTeste.TabIndex = 4
+        Me.btnTeste.Text = "Teste Console"
+        Me.btnTeste.UseVisualStyleBackColor = True
         '
         'frmBestSoma
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(421, 283)
+        Me.Controls.Add(Me.btnTeste)
         Me.Controls.Add(Me.lblNumero)
         Me.Controls.Add(Me.txtNumero)
         Me.Controls.Add(Me.btnSomar)
@@ -97,4 +108,5 @@ Partial Class frmBestSoma
     Friend WithEvents txtNumero As TextBox
     Friend WithEvents lblNumero As Label
     Friend WithEvents numero As DataGridViewTextBoxColumn
+    Friend WithEvents btnTeste As Button
 End Class
